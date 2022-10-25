@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie task - 1-Stream</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div id="result">
+        <form name="uploadForm">
+            <div>
+              <input id="uploadInput" type="file" multiple />
+              <label for="fileNum">Selected files:</label>
+              <output id="fileNum">0</output>;
+              <label for="fileSize">Total size:</label>
+              <output id="fileSize">0</output>
+            </div>
+          </form>
+          <div id="output"></div>
+          <div id="previewBtn"><input type="submit" value="Preview" /></div>
+    </div>
+  </body>
+</html>
