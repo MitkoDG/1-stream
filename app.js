@@ -90,7 +90,7 @@ function createAnElement(type, content, attribute, appender) {
 
     if (type == 'input' && attribute == 'submit') {
         el.setAttribute('type', attribute);
-        el.value = "Submit now"
+        el.value = "Preview"
         el.addEventListener('click', fetchData)
     } else if (type == 'label'){
         el.setAttribute('for', content);
