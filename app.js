@@ -1,3 +1,6 @@
+// import {html, render} from 'https://unpkg.com/lit-html?module';
+import { renderMovieList } from './movies.js';
+
 const uploadInput = document.getElementById("uploadInput");
 const outputElement = document.getElementById("output");
 const previewBtn = document.getElementById("previewBtn");
@@ -79,7 +82,7 @@ function fetchData() {
     checkboxes.forEach((checkbox) => {
         values.push(checkbox.name);
     });
-    console.log(values);
+    renderMovieList(values)
 
     // check for unchecked == 0
 };
