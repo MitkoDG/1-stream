@@ -56,9 +56,7 @@ document.getElementById("uploadInput").addEventListener("change", function () {
 
             </fieldset>`
             let elementToAppend = document.querySelector('fieldset');
-            for (const movie of movieList) {
 
-            }
             let movieListLength = movieList.length - 1
             for (let i = 0; i <= movieListLength; i++) {
                 createAnElement('input', movieList[i], 'checkbox', elementToAppend)
@@ -69,8 +67,6 @@ document.getElementById("uploadInput").addEventListener("change", function () {
             }
             // previewBtn.style.display = 'block'; check if its needed
         }
-        console.log(movieList);
-        console.log(htmlMovieList);
 
     };
 });
@@ -108,5 +104,3 @@ function createAnElement(type, content, attribute, appender) {
     }
     return el;
 }
-
-// `<input type="checkbox" name="${movie}" value="${movie}">${movie}<br>`
