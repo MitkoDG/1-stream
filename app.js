@@ -1,5 +1,4 @@
 // import {html, render} from 'https://unpkg.com/lit-html?module';
-import { renderMovieList } from './src/movies.js';
 import { createAnElement } from './src/util.js';
 
 const uploadInput = document.getElementById("uploadInput");
@@ -71,15 +70,5 @@ document.getElementById("uploadInput").addEventListener("change", function () {
     };
 });
 
-// check the checked movies
-function fetchData() {
-    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-    let values = [];
-    checkboxes.forEach((checkbox) => {
-        values.push(checkbox.name);
-    });
-    renderMovieList(values)
 
-    // check for unchecked == 0
-};
 

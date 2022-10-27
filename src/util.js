@@ -1,5 +1,7 @@
+import { renderMovieList } from './movies.js';
+
 // create an element
-function createAnElement(type, content, attribute, appender) {
+export function createAnElement(type, content, attribute, appender) {
     const el = document.createElement(type);
 
     if (type == 'input' && attribute == 'submit') {
@@ -19,3 +21,15 @@ function createAnElement(type, content, attribute, appender) {
     }
     return el;
 }
+
+// check the checked movies
+function fetchData() {
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    let values = [];
+    checkboxes.forEach((checkbox) => {
+        values.push(checkbox.name);
+    });
+    renderMovieList(values)
+
+    // check for unchecked == 0
+};
