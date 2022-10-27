@@ -1,9 +1,11 @@
 // import {html, render} from 'https://unpkg.com/lit-html?module';
+import { markAsFavorite } from './src/favorite.js';
 import { createAnElement } from './src/util.js';
 
 const uploadInput = document.getElementById("uploadInput");
 const outputElement = document.getElementById("output");
 
+document.querySelector('.favorite button').addEventListener('click', markAsFavorite)
 
 // Calculate total size
 uploadInput.addEventListener("change", () => {
