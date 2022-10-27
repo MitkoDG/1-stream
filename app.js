@@ -42,7 +42,6 @@ uploadInput.addEventListener("change", () => {
 document.getElementById("uploadInput").addEventListener("change", function () {
     let fr = new FileReader();
     fr.readAsText(this.files[0]);
-    console.log(fr);
     fr.onload = function () {
         let resultList = fr.result;
         let movieList = [];

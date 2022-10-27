@@ -24,7 +24,6 @@ export function renderMovieList(movieList) {
 
 function renderMovies(movies) {
   const fragment = document.createDocumentFragment();
-  console.log(movies);
   movies.forEach(m => {
     fragment.appendChild(renderMovie(m))
   });
@@ -36,6 +35,7 @@ function renderMovie(movie) {
   movieElement.classList.add('card');
   const noImage = '../images/image_not_available.png'
   movieElement.innerHTML = `
+      <div>
         <div class="header-card">
           <input type="checkbox" name="${movie.original_title}" id="${movie.id}">
           <h2>${movie.original_title}</h2>
@@ -51,6 +51,7 @@ function renderMovie(movie) {
             <li><b>Overview:</b>${movie.overview}</li>
           </ul>
         </div>
+      </div>
     `;
 
   return movieElement;
