@@ -5,15 +5,18 @@ body {
 }
 
 main {
-  margin: 20px;
-  width: 80%;
-  border: 1px solid rgba(11, 11, 11, 0.06);
+  margin: 0 auto;
+  width: 1024px;
 }
 
 form {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section h2 {
+  text-align: center;
 }
 
 #previewBtn {
@@ -27,17 +30,58 @@ form {
 
 }
 
-.card {
+.header-card {
   display: flex;
-  border-bottom: 1px solid gray;
 }
 
-.card div img {
-  border: solid 1px rgba(54,39,37,0.06);
+.card {
+  margin: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);
+}
 
+.card-image {
+  padding: 3px;
+  /* width: 250px;
+  height: 250px; */
+  border: solid 1px rgba(54,39,37,0.06);
+}
+
+.card-image img {
+  /* width: 100%;
+  height: 100%; */
+}
+
+.content-card {
+  display: flex;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .favorite {
   display: none;
   
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all .3s ease-out;
+}
+
+.btn:hover {
+  background-color: rgb(156, 155, 155);
+  color: white;
 }
