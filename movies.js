@@ -36,7 +36,7 @@ function renderMovie(movie) {
 
     movieElement.innerHTML = `
         <input type="checkbox" name="${movie.original_title}" id="${movie.id}">
-        <div><img src="" alt="">Poster</div>
+        <div><img src="https://image.tmdb.org/t/p/w500/${movie.backdrop_path}" alt="">Poster</div>
         <div>
           <p>${movie.original_title}</p>
         </div>

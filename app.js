@@ -44,11 +44,10 @@ document.getElementById("uploadInput").addEventListener("change", function () {
     fr.onload = function () {
         let resultList = fr.result;
         let movieList = [];
-        let htmlMovieList = []
         if (resultList == "") {
             outputElement.textContent = "There is no movie list to display it !!!"
         } else {
-            movieList = resultList.split(" \r\n")
+            movieList = resultList.split("\r\n")
             
             outputElement.innerHTML = `
             <fieldset>  
