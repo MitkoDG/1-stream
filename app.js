@@ -3,7 +3,7 @@ import { createAnElement } from './src/util.js';
 
 const uploadInput = document.getElementById("uploadInput");
 const outputElement = document.getElementById("output");
-const previewBtn = document.getElementById("previewBtn");
+
 
 // Calculate total size
 uploadInput.addEventListener("change", () => {
@@ -61,13 +61,13 @@ document.getElementById("uploadInput").addEventListener("change", function () {
                 createAnElement('input', movieList[i], 'checkbox', elementToAppend)
                 createAnElement('label', movieList[i], '', elementToAppend)
                 if (i == movieListLength) {
-                    createAnElement('input', movieList[i], 'submit', elementToAppend)
+                    createAnElement('button', '', '', elementToAppend)
                 }
             }
-            // previewBtn.style.display = 'block'; check if its needed
         }
-
+        
     };
+    
 });
 
 

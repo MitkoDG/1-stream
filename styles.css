@@ -21,7 +21,7 @@ form {
 }
 
 #filtered {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
 
@@ -30,4 +30,9 @@ form {
 .card {
   display: flex;
   border-bottom: 1px solid gray;
+}
+
+.card div img {
+  width: 500px;
+  height: 281px;
 }
