@@ -25,15 +25,18 @@ export function createAnElement(type, content, attribute, appender) {
 
 // check the checked movies
 function fetchData() {
+
+
     let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     let values = [];
     checkboxes.forEach((checkbox) => {
         values.push(checkbox.name);
     });
-    
-    renderMovieList(values)
     filtered.style.display = 'flex';
+    const cardList = filtered.querySelector('.all-cards');
+    cardList.innerHTML = '<div><p>Loading...</p></div>'
     favoriteBtn.style.display = 'block';
+    renderMovieList(values)
 
     // check for unchecked == 0
 };

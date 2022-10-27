@@ -4,9 +4,11 @@ const filtered = document.getElementById('filtered');
 const cardList = filtered.querySelector('.all-cards');
 
 export function renderMovieList(movieList) {
-  cardList.innerHTML = '';
+  
   let movieForEncode = movieList.join(',');
   let encodedStr = encodeURIComponent(movieForEncode)
+  cardList.innerHTML = '';
+  
   movieList.forEach(m => {
     fetch(url + `&query=${m}&page=1&include_adult=false`)
       .then(res => res.json())
@@ -23,8 +25,8 @@ export function renderMovieList(movieList) {
 }
 
 function renderMovies(movies) {
+  
   const fragment = document.createDocumentFragment();
-  console.log(movies);
   movies.forEach(m => {
     fragment.appendChild(renderMovie(m))
   });

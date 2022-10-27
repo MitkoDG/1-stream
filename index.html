@@ -11,19 +11,18 @@
 </head>
 
 <body>
-  <main>
+  <aside>
+    <form name="uploadForm">
+      <div>
+        <input id="uploadInput" type="file" multiple />
+      </div>
+    </form>
     <div id="result">
-      <form name="uploadForm">
-        <div>
-          <input id="uploadInput" type="file" multiple />
-          <label for="fileNum">Selected files:</label>
-          <output id="fileNum">0</output>;
-          <label for="fileSize">Total size:</label>
-          <output id="fileSize">0</output>
-        </div>
-      </form>
-      <div id="output"></div>
+      <div class="output"></div>
     </div>
+  </aside>
+  <main>
+    
     <section class="section" id="filtered">
       <h2>Results for the selected movie\s</h2>
       <div class="all-cards"></div>

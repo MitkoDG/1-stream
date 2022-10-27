@@ -2,11 +2,17 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 main {
   margin: 20px auto;
   width: 1024px;
+  /* background-color: coral; */
+}
+
+aside {
+  /* background-color: aqua; */
 }
 
 form {
@@ -15,12 +21,20 @@ form {
   justify-content: center;
 }
 
+.output div {
+  margin: 5px 0;
+}
+
 .section h2 {
   text-align: center;
 }
 
 #previewBtn {
   display: none;
+}
+
+#result {
+  width: 150px;
 }
 
 #filtered {
