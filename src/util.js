@@ -1,5 +1,6 @@
 import { renderMovieList } from './movies.js';
 const filtered = document.getElementById('filtered');
+const favoriteBtn = document.querySelector('.favorite');
 // create an element
 export function createAnElement(type, content, attribute, appender) {
     const el = document.createElement(type);
@@ -28,7 +29,10 @@ function fetchData() {
     checkboxes.forEach((checkbox) => {
         values.push(checkbox.name);
     });
+    
     renderMovieList(values)
     filtered.style.display = 'flex';
+    favoriteBtn.style.display = 'block';
+
     // check for unchecked == 0
 };

@@ -7,7 +7,7 @@ body {
 main {
   margin: 20px;
   width: 80%;
-  border: 1px solid black;
+  border: 1px solid rgba(11, 11, 11, 0.06);
 }
 
 form {
@@ -33,6 +33,11 @@ form {
 }
 
 .card div img {
-  width: 500px;
-  height: 281px;
+  border: solid 1px rgba(54,39,37,0.06);
+
+}
+
+.favorite {
+  display: none;
+  
 }

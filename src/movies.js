@@ -28,14 +28,13 @@ function renderMovies(movies) {
     movies.forEach(m => {
         fragment.appendChild(renderMovie(m))
     });
-
     cardList.appendChild(fragment);
 }
 
 function renderMovie(movie) {
     const movieElement = document.createElement('div');
     movieElement.classList.add('card');
-    const noImage = '../images/image_not_available (1).png'
+    const noImage = '../images/image_not_available.png'
     movieElement.innerHTML = `
         <input type="checkbox" name="${movie.original_title}" id="${movie.id}">
         ${movie.backdrop_path ? `<div><img src="https://image.tmdb.org/t/p/w500/${movie.backdrop_path}" alt="Movie Image"></div>` 
@@ -49,6 +48,7 @@ function renderMovie(movie) {
             <li>Language:${movie.original_language}</li>
             <li>Popularity:${movie.popularity}</li>
             <li>Release date:${movie.release_date}</li>
+            <li>Overview:${movie.overview}</li>
           </ul>
         </div>
     `;
