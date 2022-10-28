@@ -7,6 +7,7 @@ export function createAnElement(type, content, attribute, appender) {
 
     if (type == 'button') {
         el.textContent = "Preview"
+        el.setAttribute('class', attribute);
         el.addEventListener('click', fetchData);
     } else if (type == 'label'){
         el.setAttribute('for', content);
