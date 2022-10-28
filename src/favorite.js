@@ -7,5 +7,7 @@ export function markAsFavorite(event) {
         if (check.checked !== true){
             check.parentElement.parentElement.parentElement.remove()
         } 
+
+        // fetch / POST request of checkboxes to a AJAX server
     }
 }

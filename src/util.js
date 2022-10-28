@@ -35,5 +35,5 @@ function fetchData() {
     filtered.style.display = 'flex';
     favoriteBtn.style.display = 'block';
 
-    // check for unchecked == 0
+    // check for unchecked == 0 and 'stop'
 };

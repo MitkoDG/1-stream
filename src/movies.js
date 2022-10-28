@@ -14,12 +14,6 @@ export function renderMovieList(movieList) {
         renderMovies(movies.results);
       });
   });
-  // fetch(url + `&query=${encodedStr}&page=1&include_adult=false`)
-  //     .then(res => res.json())
-  //     .then(movies => {
-  //       console.log(Object.values(movies));
-  //       renderMovies(movies.results);
-  //     });
 }
 
 function renderMovies(movies) {
