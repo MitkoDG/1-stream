@@ -64,6 +64,11 @@ form {
   justify-content: center;
 }
 
+.movie-details li {
+  margin: 3px 0;
+  list-style-type: square;
+}
+
 .favorite {
   display: none;
   
